@@ -19,13 +19,6 @@
     font-family: "Helvetica";
   }
   
-<<<<<<< HEAD
-=======
-  .navbar{
-    height: 60px;
-    padding-left: 30px;
-  }
->>>>>>> ae4a6212d056e5826107d76d19e9c74a415756ba
   
   .logo{
     line-height: 60px;
@@ -36,7 +29,6 @@
     vertical-align: middle;
   }
   
-<<<<<<< HEAD
 nav {
     display: flex;
     justify-content: center;
@@ -59,25 +51,6 @@ nav a:hover {
 }
 
 
-=======
-  .navbar ul{
-    float: right;
-  }
-  
-  .navbar li{
-    list-style-type: none;
-    float: left;
-    margin-right: 30px;
-  }
-  
-  .navbar a{
-    text-decoration: none;
-    color: black;
-    font-style: bold;
-    font-size: 13px;
-    margin-bottom: 30px;
-  }
->>>>>>> ae4a6212d056e5826107d76d19e9c74a415756ba
   
   .hero_header{
     /* width: 60%;
@@ -158,7 +131,6 @@ nav a:hover {
   }
 
   .my_bg {    
-<<<<<<< HEAD
     background-color: white;
     background-size: 100% auto;
   }
@@ -166,15 +138,6 @@ nav a:hover {
   .my_bg2 {
     background-image: url("background.png");
     background-size: 100% auto;
-=======
-    background-image: url("background.jpg");
-    background-size: cover;
-  }
-
-  .my_bg2 {
-    background-image: url("background2.jpg");
-    background-size : cover;
->>>>>>> ae4a6212d056e5826107d76d19e9c74a415756ba
   }
 
   a{
@@ -184,7 +147,6 @@ nav a:hover {
     transition: color 0.5s;
   }
 
-<<<<<<< HEAD
   body {
     margin: 0;
     padding: 0;
@@ -264,12 +226,3 @@ body {
           border: 2px solid white; /* 이미지에 테두리 추가 (선택 사항) */
           box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5); /* 이미지에 그림자 추가 */
       }
-=======
-  a:visited, a:linked {
-    color: #000000;
-  }
-  
-  a:hover {
-    color: blue;
-  }
->>>>>>> ae4a6212d056e5826107d76d19e9c74a415756ba
