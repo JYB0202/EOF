@@ -19,10 +19,6 @@
     font-family: "Helvetica";
   }
   
-  .navbar{
-    height: 60px;
-    padding-left: 30px;
-  }
   
   .logo{
     line-height: 60px;
@@ -33,23 +29,28 @@
     vertical-align: middle;
   }
   
-  .navbar ul{
-    float: right;
-  }
-  
-  .navbar li{
-    list-style-type: none;
-    float: left;
-    margin-right: 30px;
-  }
-  
-  .navbar a{
-    text-decoration: none;
+nav {
+    display: flex;
+    justify-content: center;
+
+    
+   
+    
+    
+}
+nav a {
     color: black;
-    font-style: bold;
-    font-size: 13px;
-    margin-bottom: 30px;
-  }
+    padding: 1rem;
+    text-decoration: none;
+    
+}
+
+nav a:hover {
+    background-color: #555;
+    text-decoration: #555;
+}
+
+
   
   .hero_header{
     /* width: 60%;
@@ -130,13 +131,13 @@
   }
 
   .my_bg {    
-    background-image: url("background.jpg");
-    background-size: cover;
+    background-color: white;
+    background-size: 100% auto;
   }
 
   .my_bg2 {
-    background-image: url("background2.jpg");
-    background-size : cover;
+    background-image: url("background.png");
+    background-size: 100% auto;
   }
 
   a{
@@ -146,10 +147,82 @@
     transition: color 0.5s;
   }
 
-  a:visited, a:linked {
-    color: #000000;
-  }
-  
-  a:hover {
-    color: blue;
-  }
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 2000px;
+  margin: auto;
+  overflow: hidden;
+}
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.text-container {
+  position: absolute;
+  top: 10%; /* 텍스트를 이미지 상단에 배치 */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-around; /* 텍스트 사이의 간격을 자동으로 조정 */
+  width: 80%; /* 텍스트 컨테이너의 너비 */
+}
+.text {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-decoration: none; /* 링크 밑줄 제거 */
+}
+.text:hover {
+  text-decoration: underline; /* 마우스를 올렸을 때 밑줄 표시 */
+  color : skyblue;
+
+}
+/* 추가 이미지를 담을 그리드 컨테이너 */
+.grid-container {
+  position: absolute;
+  top: 30%; /* 텍스트 아래 일정 간격으로 배치 */
+  left: 50%;
+  transform: translateX(-50%);
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 2열로 배치 */
+  gap: 50px; /* 이미지들 사이의 간격 */
+  width: 90%; /* 그리드 컨테이너의 너비 */
+}
+.grid-container img {
+  width: 100%; /* 그리드 아이템의 너비 */
+  height: auto;
+  border: 2px solid white; /* 이미지에 테두리 추가 (선택 사항) */
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5); /* 이미지에 그림자 추가 */
+}
+
+        /* 1열로 이미지를 배치하는 그리드 컨테이너 */
+        .grid-container2 {
+          position: absolute;
+          top: 30%; /* 텍스트 아래 일정 간격으로 배치 */
+          left: 50%;
+          transform: translateX(-50%);
+          display: grid;
+          grid-template-columns: 1fr; /* 1열로 배치 */
+          gap: 20px; /* 이미지들 사이의 간격 */
+          width: 60%; /* 그리드 컨테이너의 너비 */
+      }
+      .grid-container2 img {
+          width: 100%; /* 그리드 아이템의 너비 */
+          height: auto;
+          border: 2px solid white; /* 이미지에 테두리 추가 (선택 사항) */
+          box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5); /* 이미지에 그림자 추가 */
+      }
